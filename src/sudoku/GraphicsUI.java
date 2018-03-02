@@ -36,12 +36,22 @@ public class GraphicsUI extends Application {
 		topbox.setPrefColumns(9);
 		topbox.setPrefRows(9);
 		final int SIZE = 40;
+		int counter = 0;
 		for (int i = 0; i < 9; i++) {
 			for (int k = 0; k < 9; k++) {
-
+				counter ++;
+				
 				TextField label = new TextField();
 				label.setAlignment(Pos.CENTER);
 				label.setPrefSize(SIZE, SIZE);
+				
+				if (((k < 3 || k > 5) && (i < 3 || i > 5)) || ((i > 2 && i < 6) && (k > 2 && k < 6))) {
+					label.setStyle("-fx-border-color : black;" + "-fx-font-size: 16;");
+
+				}
+				else{
+					label.setStyle("-fx-background-color : pink;" + "-fx-border-color : black;"+ "-fx-font-size: 16;");
+				}
 				topbox.getChildren().add(label);
 			}
 		}
@@ -49,6 +59,26 @@ public class GraphicsUI extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		primaryStage.setResizable(false);
+		
+		
+		B.setOnAction(event -> {
+		//läsa in alla inputs i en array
+			//sedan skall denna översättas till barnen i topboxen 
+			System.out.println(topbox.getChildren().get(2));
+		
+		});
+		
+		
+		
 
+	}
+	
+	public Board getFromWindow(){	
+		return null;
+	}
+	
+	public boolean writeToWindow(Board board){
+		return false;
+		
 	}
 }
