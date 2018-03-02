@@ -79,10 +79,18 @@ public class SudokuSolver {
 
 
     /** Placement class
-     *  @returns true if placement is legal
+     *  @return true if placement is legal
      * */
     public static class Placement {
 
+        /**
+         * Checks if you can place a number in specified cell.
+         * @param i     x-pos
+         * @param j     y-pos
+         * @param board Board object you want to check
+         * @param value The value you want to check
+         * @return true if it's legal to place the specified value on specified position.
+         * */
         public static boolean isLegal(int i, int j, int value, Board board) {
             if(boxIsLegal(i, j, value, board) && rowIsLegal(i, j, value, board) && columnIsLegal(i, j, value, board)) return true;
             return false;

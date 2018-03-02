@@ -7,14 +7,30 @@ public class Board {
         board = new int[9][9];
     }
 
+    /**
+     * Get value at specified position
+     * @param x xpos
+     * @param y ypos
+     * @return value at specified pos
+     * */
     public int get(int x, int y){
         return board[x][y];
     }
 
+    /**
+     * Set value at specified postion
+     * @param x xpos
+     * @param y ypos
+     * @param value value to set
+     * @return value you set
+     * */
     public int set(int x, int y, int value){
         return board[x][y] = value;
     }
 
+    /**
+     * @return String Creates string of whole board
+     * */
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
@@ -27,7 +43,9 @@ public class Board {
         }
         return sb.toString();
     }
+
     /**
+     * Creates board from string with this structure
      * 9 9 9 0 0 0 0 0 0
      * 9 9 9 0 0 0 0 0 0
      * 9 9 9 0 0 0 0 0 0
@@ -37,7 +55,6 @@ public class Board {
      * 9 9 9 0 0 0 0 0 0
      * 9 9 9 0 0 0 0 0 0
      * 9 9 9 0 0 0 0 0 0
-     *
      * */
     public void createBoard(String boardString){
         String[] lines = boardString.split("\n");
