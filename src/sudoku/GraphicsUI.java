@@ -12,7 +12,10 @@ import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
 public class GraphicsUI extends Application {
-
+		Button B = new Button("Solve");
+		Button C = new Button("Clear");
+		TilePane topbox = new TilePane();
+		BorderPane root = new BorderPane();
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -21,10 +24,7 @@ public class GraphicsUI extends Application {
 	public void start(Stage primaryStage) {
 		primaryStage.setTitle("SudokuSolver");
 
-		Button B = new Button("Solve");
-		Button C = new Button("Clear");
-		TilePane topbox = new TilePane();
-		BorderPane root = new BorderPane();
+	
 		root.setTop(topbox);
 		HBox hbox = new HBox();
 		root.setBottom(hbox);
@@ -53,6 +53,8 @@ public class GraphicsUI extends Application {
 					label.setStyle("-fx-background-color : pink;" + "-fx-border-color : black;"+ "-fx-font-size: 16;");
 				}
 				topbox.getChildren().add(label);
+				
+				
 			}
 		}
 		
@@ -64,7 +66,8 @@ public class GraphicsUI extends Application {
 		B.setOnAction(event -> {
 		//läsa in alla inputs i en array
 			//sedan skall denna översättas till barnen i topboxen 
-			System.out.println(topbox.getChildren().get(2));
+		TextField label = (TextField) topbox.getChildren().get(1);
+		System.out.println(label.getText());
 		
 		});
 		
@@ -73,8 +76,35 @@ public class GraphicsUI extends Application {
 
 	}
 	
-	public Board getFromWindow(){	
-		return null;
+	public Board getFromWindow(){
+		int value;
+		int[] array = new int[81];
+		String text;
+		for(int i = 0; i <=81; i++) {
+            
+            	TextField label = (TextField) topbox.getChildren().get(i);
+        		text = label.getText();
+        		if(text == ""){
+        			text = "0";
+        		}
+        		value = Integer.parseInt(text);
+        		
+        		if(value>=0){
+        			array[i] = value;	
+        		}
+        		
+            	
+                
+            }
+        Board board = new Board();
+        int index = 0;
+        for (int i = 0; i < 9; i++) {
+			for (int k = 0; k < 9; k++) {
+				board.set(k, i, array[index]);
+				index++;
+			}
+        }	
+		return board;
 	}
 	
 	public boolean writeToWindow(Board board){
@@ -82,3 +112,4 @@ public class GraphicsUI extends Application {
 		
 	}
 }
+
