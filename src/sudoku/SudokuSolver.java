@@ -60,7 +60,7 @@ public class SudokuSolver {
 
     /**
      * Prints board and shows it in console
-     * @param board */
+     * @param board     the board you want to print */
     public void printBoard(Board board){
         System.out.println(board.toString());
         /*
