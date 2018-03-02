@@ -55,15 +55,15 @@ public class BoardExamples {
         return board;
     }
 
-    public static Board board4(){
+    private static Board board4(){
         return null;
     }
 
-    public static Board board5(){
+    private static Board board5(){
         return null;
     }
 
-    public static Board board6(){
+    private static Board board6(){
         return null;
     }
 
