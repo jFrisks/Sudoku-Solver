@@ -9,10 +9,10 @@ public class Main {
         Board emptyBoard = BoardExamples.empty();
         Board unsolveable = BoardExamples.unsolvable1();
 
-        s.printBoard(unsolveable);
+        s.printBoard(evilBoard);
 
-        if(s.solve(unsolveable)){
-            s.printBoard(unsolveable);
+        if(s.solve(evilBoard)){
+            s.printBoard(evilBoard);
         }else{
             System.out.println("NONE!");
         }
