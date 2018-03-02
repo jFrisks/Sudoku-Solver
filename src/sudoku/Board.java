@@ -39,15 +39,26 @@ public class Board {
      * 9 9 9 0 0 0 0 0 0
      *
      * */
-    public String createBoard(String board){
-        String[] lines = board.split("\n");
+    public void createBoard(String boardString){
+        String[] lines = boardString.split("\n");
+        int[] array = new int[81];
 
+        int index = 0;
         for(String line: lines){
-            line.split(" ");
-
-            Integer.parseInt(line);
+            String[] numbers = line.split(" ");
+            for(String number: numbers){
+                array[index] = Integer.parseInt(number);
+                index ++;
+            }
         }
-        return "";
+
+        index = 0;
+        for(int y = 0; y <9; y++) {
+            for(int x= 0; x<9; x++) {
+                board[x][y] = array[index];
+                index++;
+            }
+        }
     }
 
 }

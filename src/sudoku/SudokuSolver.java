@@ -37,16 +37,16 @@ public class SudokuSolver {
         sb.append("0 0 5 0 0 0 1 0 0" + "\n");
         sb.append("3 6 0 5 0 1 0 9 7" + "\n");
         sb.append("0 9 0 0 0 0 0 2 0" + "\n");
-        sb.append("0 0 7 0 0 0 9 0 0" + "\n");
         String boardString = sb.toString();
 
         SudokuSolver s = new SudokuSolver();
         Board board = new Board();
-        //board.createBoard(boardString);
+        board.createBoard(boardString);
+        /*
         board.set(2, 2, 9);
         board.set(4, 7, 9);
         board.set(8, 5, 9);
-        board.toString();
+        */
         s.printBoard(board);
         s.solve(0, 0, board);
         s.printBoard(board);
