@@ -6,27 +6,20 @@ package sudoku;
 public class SudokuSolver {
 
 
-    /**---- CONSTRUCTOR ----*/
+    /*---- CONSTRUCTOR ----*/
     public SudokuSolver() {
     }
 
-    /**------- MAIN --------*/
+    /*------- MAIN --------*/
 
 
-    /**----- METHODS ------*/
-
-    /**
-     * SOLVE
-     * Tries a placement and see if its legal
-     * @returns true or false depending if successful
-     * Goal is to make whole board successfull and filled up
-     * i -> x-axis
-     * j -> y-axis
-     * */
+    /*----- METHODS ------*/
 
     /**
      * Solves Sudoku
-     * @returns true if successfully solved
+     * Goal is to go through all cells and get to (9,9) and successfully find a value.
+     * @param board
+     * @return true if successfully solved.
      * */
     public boolean solve(Board board){
         return solve(0, 0, board);
@@ -65,6 +58,9 @@ public class SudokuSolver {
         return false;
     }
 
+    /**
+     * Prints board and shows it in console
+     * @param board */
     public void printBoard(Board board){
         System.out.println(board.toString());
         /*
@@ -93,7 +89,7 @@ public class SudokuSolver {
 
         }
 
-        public static boolean boxIsLegal(int i, int j, int value, Board board) {
+        private static boolean boxIsLegal(int i, int j, int value, Board board) {
             //Hitta boxen - 0-3 eller 4-6, eller 7-9 - i/3*3 - då kommer du till första.
             //loopa alla tal i boxen - kolla om den redan finns
             //Defined board[x][y]
@@ -112,7 +108,7 @@ public class SudokuSolver {
             return true;
         }
 
-        public static boolean columnIsLegal(int i, int j, int value, Board board) {
+        private static boolean columnIsLegal(int i, int j, int value, Board board) {
             //row fixed and col moving
             for(int y = 0; y < 9; y++){
                 if(board.get(i, y) == value){
@@ -122,7 +118,7 @@ public class SudokuSolver {
             return true;
         }
 
-        public static boolean rowIsLegal(int i, int j, int value, Board board) {
+        private static boolean rowIsLegal(int i, int j, int value, Board board) {
             //row moving and col fixed
             for(int x = 0; x < 9; x++){
                 if(board.get(x, j) == value){
