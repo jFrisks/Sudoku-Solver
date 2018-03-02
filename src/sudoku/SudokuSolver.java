@@ -8,32 +8,6 @@ public class SudokuSolver {
     }
 
     /**------- MAIN --------*/
-    public static void main(String[] args) {
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("0 3 0 0 0 0 0 7 0" + "\n");
-        sb.append("6 5 0 9 0 8 0 1 3" + "\n");
-        sb.append("0 0 7 0 0 0 9 0 0" + "\n");
-        sb.append("0 1 0 0 9 0 0 5 0" + "\n");
-        sb.append("0 0 0 4 0 7 0 0 0" + "\n");
-        sb.append("0 7 0 0 3 0 0 6 0" + "\n");
-        sb.append("0 0 5 0 0 0 1 0 0" + "\n");
-        sb.append("3 6 0 5 0 1 0 9 7" + "\n");
-        sb.append("0 9 0 0 0 0 0 2 0" + "\n");
-        String boardString = sb.toString();
-
-        SudokuSolver s = new SudokuSolver();
-        Board board = new Board();
-        board.createBoard(boardString);
-        /*
-        board.set(2, 2, 9);
-        board.set(4, 7, 9);
-        board.set(8, 5, 9);
-        */
-        s.printBoard(board);
-        s.solve(0, 0, board);
-        s.printBoard(board);
-    }
 
 
     /**----- METHODS ------*/
@@ -46,6 +20,11 @@ public class SudokuSolver {
      * i -> x-axis
      * j -> y-axis
      * */
+
+    public boolean solve(Board board){
+        return solve(0, 0, board);
+    }
+
     private boolean solve(int i, int j, Board board) {
 
         //If row lower than possible -> gone through all rows and succeeded
