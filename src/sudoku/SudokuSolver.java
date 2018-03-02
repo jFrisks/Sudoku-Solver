@@ -9,24 +9,7 @@ public class SudokuSolver {
 
     /**------- MAIN --------*/
     public static void main(String[] args) {
-        /*
-        int[][] board1 = new int[9][9];
-        board1[2][5] = 9;
-        board1[0][0] = 9;
-        f(Placement.columnIsLegal(1,3, 9, board1)) System.out.println("Funka på kolumnen 1");
-        if(Placement.columnIsLegal(2,3, 9, board1)){}else System.out.println("Funka ej på kolumnen 2");
-        if(Placement.boxIsLegal(2,3, 9, board1)){}else System.out.println("Finns redan en 9 i den boxen");
-        if(Placement.rowIsLegal(1,3, 9, board1)) System.out.println("Funka på raden 1");
-        if(Placement.rowIsLegal(0,5, 9, board1)){}else System.out.println("Funka ej på raden 2");
-        // write your code here
 
-        SudokuSolver s = new SudokuSolver();
-        s.printBoard(board1);
-        System.out.println("=================");
-        s.solve(0, 0, board1);
-        s.printBoard(board1);
-        */
-        //Bygg sträng
         StringBuilder sb = new StringBuilder();
         sb.append("0 3 0 0 0 0 0 7 0" + "\n");
         sb.append("6 5 0 9 0 8 0 1 3" + "\n");
