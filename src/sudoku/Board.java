@@ -26,7 +26,7 @@ public class Board {
      * */
     public int set(int x, int y, int value){
         //TODO: Hantera felinmatning -> returnera -1
-        if(value < 1 || value > 9){
+        if(value < 0 || value > 9){
             return -1;
         }else{
             return board[x][y] = value;

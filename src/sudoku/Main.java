@@ -11,7 +11,6 @@ public class Main {
 
         Board chosenBoard = evilBoard;
 
-        System.out.println(Integer.parseInt(""));
         s.printBoard(chosenBoard);
 
         if(s.solve(chosenBoard)){
