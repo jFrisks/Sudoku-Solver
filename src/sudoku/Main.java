@@ -9,9 +9,9 @@ public class Main {
         Board emptyBoard = BoardExamples.empty();
         Board unsolveable = BoardExamples.unsolvable1();
 
-        Board chosenBoard = unsolveable;
+        Board chosenBoard = evilBoard;
 
-
+        System.out.println(Integer.parseInt(""));
         s.printBoard(chosenBoard);
 
         if(s.solve(chosenBoard)){

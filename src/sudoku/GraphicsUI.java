@@ -67,13 +67,9 @@ public class GraphicsUI extends Application {
 			System.out.println(topbox.getChildren().get(2));
 		
 		});
-		
-		
-		
-
 	}
 	
-	public Board getFromWindow(){	
+	public Board getFromWindow(){
 		return null;
 	}
 	

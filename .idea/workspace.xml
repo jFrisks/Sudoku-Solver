@@ -5,42 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd5fa34e-cdf7-42dd-8ac5-c6fefa81fd8a" name="Default" comment="BoardExamples examples&#10;Main added&#10;Sudoku solver removed main">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sudoku/sudoku/Board.class" afterPath="$PROJECT_DIR$/out/production/Sudoku/sudoku/Board.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sudoku/sudoku/BoardExamples.class" afterPath="$PROJECT_DIR$/out/production/Sudoku/sudoku/BoardExamples.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sudoku/sudoku/GraphicsUI.class" afterPath="$PROJECT_DIR$/out/production/Sudoku/sudoku/GraphicsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sudoku/sudoku/Main.class" afterPath="$PROJECT_DIR$/out/production/Sudoku/sudoku/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Sudoku/sudoku/SudokuSolver$Placement.class" afterPath="$PROJECT_DIR$/out/production/Sudoku/sudoku/SudokuSolver$Placement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/constant-values.html" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/help-doc.html" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index.html" afterPath="$PROJECT_DIR$/javadoc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/Board.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/Board.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/BoardExamples.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/BoardExamples.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/GraphicsUI.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/GraphicsUI.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/Main.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/Main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.Placement.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.Placement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/package-tree.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/BoardExamples.java" afterPath="$PROJECT_DIR$/src/sudoku/BoardExamples.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/GraphicsUI.java" afterPath="$PROJECT_DIR$/src/sudoku/GraphicsUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/Main.java" afterPath="$PROJECT_DIR$/src/sudoku/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/SudokuSolver.java" afterPath="$PROJECT_DIR$/src/sudoku/SudokuSolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/SudokuSolverTest.java" afterPath="$PROJECT_DIR$/src/test/SudokuSolverTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SudokuSolver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SudokuSolver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sudoku/SudokuSolver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2010">
@@ -67,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuSolverTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SudokuSolverTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/SudokuSolverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="418">
+              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,8 +50,8 @@
       <file leaf-file-name="BoardExamples.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sudoku/BoardExamples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="157">
+              <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -156,11 +124,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/sudoku/Placement.java" />
         <option value="$PROJECT_DIR$/src/sudoku/Board.java" />
-        <option value="$PROJECT_DIR$/src/sudoku/BoardExamples.java" />
-        <option value="$PROJECT_DIR$/src/test/SudokuSolverTest.java" />
         <option value="$PROJECT_DIR$/src/sudoku/GraphicsUI.java" />
         <option value="$PROJECT_DIR$/src/sudoku/Main.java" />
         <option value="$PROJECT_DIR$/src/sudoku/SudokuSolver.java" />
+        <option value="$PROJECT_DIR$/src/sudoku/BoardExamples.java" />
+        <option value="$PROJECT_DIR$/src/test/SudokuSolverTest.java" />
       </list>
     </option>
   </component>
@@ -534,26 +502,10 @@
     <entry file="file://$PROJECT_DIR$/constant-values.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/src/Placement.java" />
-    <entry file="file://$PROJECT_DIR$/src/sudoku/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sudoku/Main (1).java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sudoku/BoardExamples.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -571,16 +523,6 @@
         <state relative-caret-position="456">
           <caret line="56" column="24" lean-forward="false" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/SudokuSolverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,6 +550,32 @@
         <state relative-caret-position="2010">
           <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sudoku/BoardExamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sudoku/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/SudokuSolverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
