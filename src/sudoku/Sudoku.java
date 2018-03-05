@@ -3,17 +3,15 @@ package sudoku;
 /**
  *
  */
-public class SudokuSolver {
-    Board originalBoard;
+public class Sudoku {
+    private Board board;
 
-    /*---- CONSTRUCTOR ----*/
     /**
-     * Constructor for the SudokuSolver. Nothing special.
+     * Constructor for the Sudoku. Nothing special.
      * */
-    public SudokuSolver() {
+    public Sudoku(Board board) {
+        this.board = board;
     }
-
-    /*------- MAIN --------*/
 
 
     /*----- METHODS ------*/
@@ -24,12 +22,11 @@ public class SudokuSolver {
      * @param board The board you want to solve
      * @return true if successfully solved.
      * */
-    public boolean solve(Board board){
-        originalBoard = board;
-        return solve(0, 0, board);
+    public boolean solve(){
+        return solve(0, 0);
     }
 
-    private boolean solve(int i, int j, Board board) {
+    private boolean solve(int i, int j) {
 
         //If row lower than possible -> gone through all rows and succeeded
         if(i >= 9){
@@ -46,7 +43,7 @@ public class SudokuSolver {
             if(!Placement.isLegal(i, j, board.get(i, j), board)){
                 return false;
             }
-            return solve(i+1, j, board);
+            return solve(i+1, j);
 
         }else{
             //try value
@@ -57,7 +54,7 @@ public class SudokuSolver {
                     //printBoard(board);
 
 
-                    if(solve(i+1, j, board)){
+                    if(solve(i+1, j)){
                         return true;
                     }else{
                         board.set(i, j, 0);        //backtracing, reset cell

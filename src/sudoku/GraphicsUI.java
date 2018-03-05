@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -19,7 +18,7 @@ public class GraphicsUI extends Application {
 	Button C = new Button("Clear");
 	TilePane topbox = new TilePane();
 	BorderPane root = new BorderPane();
-	SudokuSolver solver = new SudokuSolver();
+	Sudoku solver = new Sudoku();
 
 	public static void main(String[] args) {
 		launch(args);
@@ -27,7 +26,7 @@ public class GraphicsUI extends Application {
 
 	@Override
 	public void start(Stage primaryStage) {
-		primaryStage.setTitle("SudokuSolver");
+		primaryStage.setTitle("Sudoku");
 
 		Board board1;
 		root.setTop(topbox);

@@ -5,17 +5,17 @@ import org.junit.Before;
 import org.junit.Test;
 import sudoku.Board;
 import sudoku.BoardExamples;
-import sudoku.SudokuSolver;
+import sudoku.Sudoku;
 
 import static org.junit.Assert.*;
 
-public class SudokuSolverTest {
+public class SudokuTest {
     Board board;
-    SudokuSolver solver;
+    Sudoku solver;
 
     @Before
     public void setUp() throws Exception {
-        solver = new SudokuSolver();
+        solver = new Sudoku();
     }
 
     @After

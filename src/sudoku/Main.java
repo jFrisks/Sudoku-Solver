@@ -3,7 +3,7 @@ package sudoku;
 public class Main {
     public static void main(String[] args) {
 
-        SudokuSolver s = new SudokuSolver();
+        Sudoku s = new Sudoku();
 
         Board evilBoard = BoardExamples.evil();
         Board emptyBoard = BoardExamples.empty();

@@ -25,7 +25,7 @@ public class Board {
      * @return value you set, -1 if input is not between 1-9
      * */
     public int set(int x, int y, int value){
-        //TODO: Hantera felinmatning -> returnera -1
+        //TODO: Hantera felinmatning -> returnera -1, a, 10
         if(value < 0 || value > 9){
             return -1;
         }else{
