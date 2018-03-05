@@ -4,7 +4,7 @@ package sudoku;
  *
  */
 public class SudokuSolver {
-
+    Board originalBoard;
 
     /*---- CONSTRUCTOR ----*/
     /**
@@ -25,6 +25,7 @@ public class SudokuSolver {
      * @return true if successfully solved.
      * */
     public boolean solve(Board board){
+        originalBoard = board;
         return solve(0, 0, board);
     }
 
@@ -41,13 +42,21 @@ public class SudokuSolver {
 
 
         //skip filled cells
-        if(board.get(i, j) != 0) {
+        if(originalBoard.get(i, j) != 0) {
+            if(!Placement.isLegal(i, j, board.get(i, j), board)){
+                return false;
+            }
             return solve(i+1, j, board);
+
         }else{
             //try value
             for(int tryValue = 1; tryValue<=9; tryValue++){
                 if(Placement.isLegal(i, j, tryValue, board)){
                     board.set(i, j, tryValue);
+
+                    //printBoard(board);
+
+
                     if(solve(i+1, j, board)){
                         return true;
                     }else{
@@ -55,13 +64,11 @@ public class SudokuSolver {
                     }
                 }
             }
-
+            board.set(i, j, 0);        //backtracing, reset cell
         }
-        board.set(i, j, 0);        //backtracing, reset cell
         return false;
-
-
     }
+
 
     /**
      * Prints board and shows it in console
