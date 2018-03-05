@@ -8,7 +8,7 @@ public class SudokuSolver {
 
     /*---- CONSTRUCTOR ----*/
     /**
-     * Construktor for the SudokuSolver. Nothing special.
+     * Constructor for the SudokuSolver. Nothing special.
      * */
     public SudokuSolver() {
     }
@@ -49,15 +49,16 @@ public class SudokuSolver {
                     board.set(i, j, tryValue);
 
                     //if the one after works - this also works
+                    /*
                     if (solve(i+1, j, board)){
                         return true;
                     }
+                    */
+                    return solve(i+1, j, board);
                 }
             }
+            board.set(i, j, 0);        //backtracing, reset cell
         }
-
-
-        board.set(i, j, 0);        //backtracing, reset cell
         return false;
     }
 
