@@ -39,6 +39,7 @@ public class SudokuSolver {
             }
         }
 
+
         //skip filled cells
         if(board.get(i, j) != 0) {
             return solve(i+1, j, board);
@@ -47,19 +48,19 @@ public class SudokuSolver {
             for(int tryValue = 1; tryValue<=9; tryValue++){
                 if(Placement.isLegal(i, j, tryValue, board)){
                     board.set(i, j, tryValue);
-
-                    //if the one after works - this also works
-                    /*
-                    if (solve(i+1, j, board)){
+                    if(solve(i+1, j, board)){
                         return true;
+                    }else{
+                        board.set(i, j, 0);        //backtracing, reset cell
                     }
-                    */
-                    return solve(i+1, j, board);
                 }
             }
-            board.set(i, j, 0);        //backtracing, reset cell
+
         }
+        board.set(i, j, 0);        //backtracing, reset cell
         return false;
+
+
     }
 
     /**
