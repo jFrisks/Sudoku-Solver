@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd5fa34e-cdf7-42dd-8ac5-c6fefa81fd8a" name="Default" comment="BoardExamples examples&#10;Main added&#10;Sudoku solver removed main">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sudoku/SudokuSolver.java" afterPath="$PROJECT_DIR$/src/sudoku/Sudoku.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/SudokuSolverTest.java" afterPath="$PROJECT_DIR$/src/test/SudokuTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.Placement.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.Placement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.html" afterPath="$PROJECT_DIR$/javadoc/sudoku/SudokuSolver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/Board.java" afterPath="$PROJECT_DIR$/src/sudoku/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/GraphicsUI.java" afterPath="$PROJECT_DIR$/src/sudoku/GraphicsUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/Main.java" afterPath="$PROJECT_DIR$/src/sudoku/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sudoku/Sudoku.java" afterPath="$PROJECT_DIR$/src/sudoku/Sudoku.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,13 +26,15 @@
       <file leaf-file-name="Sudoku.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sudoku/Sudoku.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="165">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding>
                 <element signature="e#177#178#0" expanded="true" />
                 <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#1579#1580#0" expanded="true" />
+                <element signature="e#1631#1632#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +80,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sudoku/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,7 +100,7 @@
       <file leaf-file-name="GraphicsUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sudoku/GraphicsUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
+            <state relative-caret-position="1140">
               <caret line="133" column="21" lean-forward="false" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,9 +138,9 @@
         <option value="$PROJECT_DIR$/src/sudoku/GraphicsUI.java" />
         <option value="$PROJECT_DIR$/src/sudoku/BoardExamples.java" />
         <option value="$PROJECT_DIR$/src/test/SudokuSolverTest.java" />
-        <option value="$PROJECT_DIR$/src/sudoku/Main.java" />
         <option value="$PROJECT_DIR$/src/sudoku/Board.java" />
         <option value="$PROJECT_DIR$/src/sudoku/SudokuSolver.java" />
+        <option value="$PROJECT_DIR$/src/sudoku/Main.java" />
         <option value="$PROJECT_DIR$/src/sudoku/Sudoku.java" />
       </list>
     </option>
@@ -604,8 +600,10 @@
           <folding>
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,8 +635,10 @@
           <folding>
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -763,7 +763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sudoku/GraphicsUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state relative-caret-position="1140">
           <caret line="133" column="21" lean-forward="false" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -775,21 +775,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sudoku/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sudoku/Sudoku.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="165">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
           </folding>
         </state>
       </provider>

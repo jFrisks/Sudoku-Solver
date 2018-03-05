@@ -19,7 +19,6 @@ public class Sudoku {
     /**
      * Solves Sudoku
      * Goal is to go through all cells and get to (9,9) and successfully find a value.
-     * @param board The board you want to solve
      * @return true if successfully solved.
      * */
     public boolean solve(){
@@ -51,9 +50,6 @@ public class Sudoku {
                 if(Placement.isLegal(i, j, tryValue, board)){
                     board.set(i, j, tryValue);
 
-                    //printBoard(board);
-
-
                     if(solve(i+1, j)){
                         return true;
                     }else{
@@ -69,20 +65,9 @@ public class Sudoku {
 
     /**
      * Prints board and shows it in console
-     * @param board     the board you want to print */
-    public void printBoard(Board board){
+     * */
+    public void printBoard(){
         System.out.println(board.toString());
-        /*
-        StringBuilder sb = new StringBuilder();
-
-        for(int y = 0; y<9; y++) {
-            for(int x = 0; x <9; x++) {
-                sb.append(board[x][y] + " ");
-            }
-            sb.append("\n");
-        }
-        System.out.println(sb.toString());
-        */
     }
 
 
