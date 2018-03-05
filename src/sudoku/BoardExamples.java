@@ -73,8 +73,22 @@ public class BoardExamples {
         return board;
     }
 
-    private static Board board5(){
-        return null;
+    public static Board unsolvable3(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("5 0 0 0 0 0 5 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        sb.append("0 0 0 0 0 0 0 0 0" + "\n");
+        String boardString = sb.toString();
+
+        Board board = new Board();
+        board.createBoard(boardString);
+        return board;
     }
 
     private static Board board6(){

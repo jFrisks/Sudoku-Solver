@@ -22,10 +22,15 @@ public class Board {
      * @param x xpos
      * @param y ypos
      * @param value value to set
-     * @return value you set
+     * @return value you set, -1 if input is not between 1-9
      * */
     public int set(int x, int y, int value){
-        return board[x][y] = value;
+        //TODO: Hantera felinmatning -> returnera -1
+        if(value < 1 || value > 9){
+            return -1;
+        }else{
+            return board[x][y] = value;
+        }
     }
 
     /**
@@ -72,7 +77,7 @@ public class Board {
         index = 0;
         for(int y = 0; y <9; y++) {
             for(int x= 0; x<9; x++) {
-                board[x][y] = array[index];
+                set(x, y, array[index]);
                 index++;
             }
         }

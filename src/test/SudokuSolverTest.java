@@ -62,4 +62,25 @@ public class SudokuSolverTest {
         assertTrue("Board that was unsolvable is now solvable after removing 7", solver.solve(board));
     }
 
+    @Test
+    public void unsolvableThenClear() throws Exception {
+        //1          5
+
+        board = BoardExamples.unsolvable3();
+
+        assertFalse("Board is unsolvable when 2 fives on same row", solver.solve(board));
+
+        //clear
+        board = BoardExamples.empty();
+
+        assertTrue("Board that was unsolvable is now solvable after clearing", solver.solve(board));
+    }
+
+    @Test
+    public void wrongInput() throws Exception {
+        board = BoardExamples.empty();
+        //set faulty value to board
+        assertEquals("You tried to place faulty value. Not between 1-9", new Integer(-1), solver.solve(board));
+    }
+
 }
