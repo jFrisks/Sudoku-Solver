@@ -42,7 +42,7 @@ public class SudokuSolver {
 
 
         //skip filled cells
-        if(originalBoard.get(i, j) != 0) {
+        if(board.get(i, j) != 0) {
             if(!Placement.isLegal(i, j, board.get(i, j), board)){
                 return false;
             }

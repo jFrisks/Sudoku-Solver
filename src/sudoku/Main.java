@@ -9,7 +9,7 @@ public class Main {
         Board emptyBoard = BoardExamples.empty();
         Board unsolveable = BoardExamples.unsolvable1();
 
-        Board chosenBoard = evilBoard;
+        Board chosenBoard = unsolveable;
 
         s.printBoard(chosenBoard);
 
