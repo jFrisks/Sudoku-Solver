@@ -16,6 +16,7 @@ public class GraphicsUI extends Application {
 		Button C = new Button("Clear");
 		TilePane topbox = new TilePane();
 		BorderPane root = new BorderPane();
+		SudokuSolver solver = new SudokuSolver();
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -24,7 +25,7 @@ public class GraphicsUI extends Application {
 	public void start(Stage primaryStage) {
 		primaryStage.setTitle("SudokuSolver");
 
-	
+		Board board1;
 		root.setTop(topbox);
 		HBox hbox = new HBox();
 		root.setBottom(hbox);
@@ -66,8 +67,7 @@ public class GraphicsUI extends Application {
 		B.setOnAction(event -> {
 		//läsa in alla inputs i en array
 			//sedan skall denna översättas till barnen i topboxen 
-		TextField label = (TextField) topbox.getChildren().get(1);
-		System.out.println(label.getText());
+			
 		
 		});
 		
@@ -108,8 +108,9 @@ public class GraphicsUI extends Application {
 	}
 	
 	public boolean writeToWindow(Board board){
-		return false;
+		Board board1 = getFromWindow();
+		
+		return solver.solve(board1);
 		
 	}
 }
-
