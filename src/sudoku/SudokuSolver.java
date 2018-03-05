@@ -7,6 +7,9 @@ public class SudokuSolver {
 
 
     /*---- CONSTRUCTOR ----*/
+    /**
+     * Construktor for the SudokuSolver. Nothing special.
+     * */
     public SudokuSolver() {
     }
 
@@ -18,7 +21,7 @@ public class SudokuSolver {
     /**
      * Solves Sudoku
      * Goal is to go through all cells and get to (9,9) and successfully find a value.
-     * @param board
+     * @param board The board you want to solve
      * @return true if successfully solved.
      * */
     public boolean solve(Board board){
@@ -78,8 +81,8 @@ public class SudokuSolver {
 
 
 
-    /** Placement class
-     *  @return true if placement is legal
+    /**
+     * Placement class
      * */
     public static class Placement {
 
