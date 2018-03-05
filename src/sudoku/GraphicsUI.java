@@ -3,6 +3,8 @@ package sudoku;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -10,6 +12,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
+import java.lang.*;
 
 public class GraphicsUI extends Application {
 	Button B = new Button("Solve");
@@ -61,16 +64,37 @@ public class GraphicsUI extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		primaryStage.setResizable(false);
-		C.setOnAction(event ->{	
+		C.setOnAction(event -> {
 			writeToWindow(clearWindow());
-			
+
 		});
 		B.setOnAction(event -> {
+
 			Board board = getFromWindow();
-			solver.solve(board);
-			 writeToWindow(board);
-			System.out.println(getFromWindow().get(0, 0));
-			//TextField label = (TextField) topbox.getChildren().get(0);
+			if (solver.solve(board)) {
+				
+				writeToWindow(board);
+				
+			}
+				else {
+					Alert alert = new Alert(AlertType.ERROR);
+					alert.setTitle("Error Dialog");
+					alert.setHeaderText("Sudoku Error");
+					alert.setContentText("Sudoku unsolvable");
+
+					alert.showAndWait();
+
+				}
+			
+
+			/*
+			 * else{
+			 * 
+			 * 
+			 * }
+			 */
+
+			// TextField label = (TextField) topbox.getChildren().get(0);
 			// System.out.println(label.getText().toCharArray());
 
 			// läsa in alla inputs i en array
@@ -86,14 +110,13 @@ public class GraphicsUI extends Application {
 		String text;
 		for (int i = 0; i < 81; i++) {
 			TextField label = (TextField) topbox.getChildren().get(i);
-			//TODO: felinmatning
-			//när ruta ej inmatad
+			// TODO: felinmatning
+			// när ruta ej inmatad
 			text = label.getText();
 			if (text.equals("")) {
 				value = 0;
-				
-			}
-			else{
+
+			} else {
 				value = Integer.parseInt(label.getText());
 			}
 
@@ -113,7 +136,6 @@ public class GraphicsUI extends Application {
 	}
 
 	public boolean writeToWindow(Board board) {
-	
 
 		int index = 0;
 		for (int y = 0; y < 9; y++) {
@@ -127,10 +149,11 @@ public class GraphicsUI extends Application {
 
 		return false;
 	}
-	
-	public Board clearWindow(){
+
+	public Board clearWindow() {
 		Board clearBoard = new Board();
-		
+
 		return clearBoard;
 	}
 }
+
